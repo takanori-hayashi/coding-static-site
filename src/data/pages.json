@@ -1,0 +1,26 @@
+[
+  {
+    "id": "index",
+    "title": "top page",
+    "description": "top page description.",
+    "parent": false
+  },
+  {
+    "id": "lower",
+    "title": "lower page",
+    "description": "lower page description.",
+    "parent": false
+  },
+  {
+    "id": "child",
+    "title": "child page",
+    "description": "child page description.",
+    "parent": "lower"
+  },
+  {
+    "id": "grandchild",
+    "title": "grandchild page",
+    "description": "grandchild page description.",
+    "parent": ["lower", "child"]
+  }
+]

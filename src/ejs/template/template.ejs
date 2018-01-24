@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../layout/_head', { data: data }) %>
+<body>
+  <%- include('../layout/_header') %>
+  <div class="container">
+    <main role="main">
+      <% var contents = '../pages/_' + data.id; %>
+      <%- include(contents) %>
+    </main>
+    <%- include('../layout/_side') %>
+  </div>
+  <%- include('../layout/_footer') %>
+</body>
+</html>
